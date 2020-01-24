@@ -1,0 +1,10 @@
+<div class="container main-container">
+   
+      <p>O numero de cliques é : {{contador}}</p>
+
+
+      <h1>Teste botão evento</h1>
+
+    <button class="btn btn-primary" type="button"  [disabled]='contador > 20'  (click)='aumentar()'>Aumentar</button>
+    <button class="btn btn-primary" type="button"(click)='zerar()' [disabled]="contador < 20" >Zerar</button>
+    </div>
